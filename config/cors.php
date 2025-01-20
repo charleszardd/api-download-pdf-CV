@@ -19,7 +19,9 @@ return [
 
     'allowed_methods' => ['*'],
 
-    'allowed_origins' => ['https://portfolio-kasenyashi.vercel.app'],
+    // 'allowed_origins' => ['https://portfolio-kasenyashi.vercel.app'],
+
+    'allowed_origins' => [env('FRONTEND_URL', 'https://portfolio-kasenyashi.vercel.app/')],
 
     'allowed_origins_patterns' => [],
 
